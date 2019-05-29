@@ -35,7 +35,7 @@ obj.sayHello("William");
 // Principle 3
 
 // code example for New Binding
-function RetailGreeter(greetee) {
+function RetailGreeter(greeter) {
   this.greeting = "Welcome to Walmart ";
   this.greeter = greeter;
   this.speak = function() {
@@ -45,7 +45,7 @@ function RetailGreeter(greetee) {
 }
 
 const todd = new RetailGreeter("Northom");
-const newman = new CordialPerson('Jerry');
+const newman = new RetailGreeter('Jerry');
 
 todd.speak();
 
